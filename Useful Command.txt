@@ -1,0 +1,8 @@
+source /srv/buildingdepot/venv/bin/activate
+python /srv/giotto/ml/server/rest_api.py
+
+sudo supervisorctl restart all(cs,ds,ml,rpc)
+
+sudo supervisorctl tail programname(cs,ds,ml,rpc) stdout
+
+service influxdb start
