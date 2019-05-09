@@ -14,13 +14,13 @@ git clone https://github.com/Entromorgan/GIoTTo.git
 
 cd BuildingDepot-v3.2.8
 
-chmod install.sh 777
+chmod u+x install.sh
 
 sudo -H ./install.sh
 
 cd ../MachineLearningLayer
 
-chmod install_ml.sh 777
+chmod u+x install_ml.sh
 
 sudo -H ./install_ml.sh
 
